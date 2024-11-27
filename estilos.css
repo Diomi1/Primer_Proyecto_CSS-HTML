@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "young-serif";
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "outfit";
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format('truetype');
+}
+
+:root {
+    --rosa:hsl(332, 51%, 32%);
+    --rosa_bajo:hsl(330, 100%, 98%);
+    --marron:hsl(14, 45%, 36%);  
+    --Stone_100: hsl(30, 54%, 90%);
+    --Stone_150: hsl(30, 18%, 87%);
+    --Stone_600: hsl(30, 10%, 34%);
+    --Stone_900: hsl(24, 5%, 18%);
+    --color_principal:#817979;
+    --fuente_secundaria:"outfit";
+    --fuente_principal:"young-serif";
+
+
+     --nutmeg: hsl(14, 45%, 36%);
+  --darkRaspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --roseWhite: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --lightGrey: hsl(30, 18%, 87%);
+  --wengeBrown: hsl(30, 10%, 34%);
+  --darkCharcoal: hsl(24, 5%, 18%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: red;
+}
+
+.contenedor {
+    background: var(--rosa_bajo);
+    padding: 20px;
+}
+
+
+body {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  min-height: 100vh; 
+  background-color: #f8e4dc; 
+}
+
+.contenedor {
+  max-width: 1200px;
+  width: 100%; 
+  padding: 35px; 
+  background-color: white; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; 
+  margin: 50px;
+}
+
+.imagen_header {
+    border-radius: 10px;
+    width: 100%;
+}
+
+h1 {
+    color: var(--Stone_900);
+    font-family: var(--fuente_principal);
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 19px;
+}
+
+p {
+    font-size: 16px;
+    font-family: var(--fuente_secundaria);
+}
+
+.preparacion {
+    margin: 40px
+}
+
+.titulo_prep{
+    margin-bottom: 15px;
+    font-family: var(--fuente_secundaria);
+    color: var(--rosa);
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+    content: '●';
+    color: var(--rosa);
+    font-size: 10px; 
+    margin-right: 20px;
+}
+
+ul li {
+    margin-top: 8px;
+    font-family: var(--fuente_secundaria);
+    color: var(--color_principal);
+}
+
+.titulo_lista {
+    color: var(--Stone_600);
+    font-weight: 600;
+}
+
+
+ h2 {
+    font-family: var(--fuente_principal);
+    color: var(--marron);
+    font-weight: 400;
+}
+
+.instrucciones>h2 {
+    margin-bottom: 15px;
+}
+
+.instrucciones,.nutricion {
+    margin-top: 50px;
+}
+
+.instrucciones li {
+    font-family: var(--fuente_secundaria);
+    color: var(--color_principal);
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.instrucciones li >span.titulo_lista {
+    color: var(--Stone_600);
+}
+
+.nutricion > p.parrafo_nutricion {
+    color: var(--color_principal);
+    margin-bottom: 15px;
+}
+
+.nutricion span{
+    color: var(--color_principal);
+}
+
+.nutricion h2 {
+    margin-bottom: 15px;
+}
+
+.nutricion .tabla_calorias p {
+    color: var(--marron);
+    font-weight: 600;
+    border-bottom: 1px #dfdfdf solid;
+    margin-bottom: 20px;
+}
+
+.espacio {
+    padding: 40px;
+}
+
+
+
+table tr{
+  border-bottom: 1px solid var(--darkCharcoal);
+  border-spacing: 20px; 
+  
+}
+td{ padding: 12px;}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--fuente_secundaria);
+    font-weight: bold;
+    color: #817979;
+}
+
+
+.nutricion_dato {
+    color: var(--marron);
+}
